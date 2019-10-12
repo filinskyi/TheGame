@@ -1,0 +1,16 @@
+﻿-X-
+xxxxxxxxxxxxxxxxxxxxxxxxx
+-O-
+ooooooooooooooooooooooooo
+3 Lines-X-
+xxxxxoooooxxxxxoooooxxxxx
+3 Lines-O-
+oooooxxxxxoooooxxxxxooooo
+Sign +
+oooooooxoooxxxoooxooooooo
+Sign -
+oooooooooooxxxooooooooooo
+test
+ooooooooooooooooooooooooo
+ldksagha.lg
+ooooooooooooooooooooooooo
