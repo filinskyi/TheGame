@@ -33,7 +33,7 @@ namespace useSOLIDin
             }
         }
 
-        public void DisplayLevelName(Levels levels, Int32 levelName)
+        public void DisplayLevelName(Levels levels, int levelName)
         {
             Print(levels.LevelsInfo[levelName].Name);
         }
@@ -47,7 +47,7 @@ namespace useSOLIDin
             Console.WriteLine();
         }
 
-        public void Print(String text)
+        public void Print(string text)
         {
             Console.WriteLine(text);
         }

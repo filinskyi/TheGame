@@ -8,7 +8,10 @@ namespace useSOLIDin
         {
             if (data.Length == 2)
             {
-                if (data[1] != null) return new Level { Name = data[0], Data = data[1] };
+                if (data[1] != null)
+                {
+                    return new Level { Name = data[0], Data = data[1] };
+                }
 
                 throw new Exception("Data Level is empty");
 

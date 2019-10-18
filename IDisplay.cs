@@ -1,7 +1,12 @@
 ﻿namespace useSOLIDin
 {
-    interface IDisplay : IDisplayMenu, IDisplayLevels, IDisplayLevelData, IDisplayLevelName
+    interface IDisplay
     {
+
+        void DisplayMenu();
+        void DisplayLevelData(Levels levels, int levelNo);
+        void DisplayLevelName(Levels levels, int levelName);
+        void DisplayAllLevels(Levels levels);
     }
 
 }

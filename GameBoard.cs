@@ -18,7 +18,7 @@ namespace useSOLIDin
             OutPut = outPut;
             NoReader = noReader;
             Code = code;
-            
+
         }
         public void PrintLevelName() => OutPut.Print(this.LevelName);
         public void PrintLevelData()

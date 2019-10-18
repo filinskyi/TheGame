@@ -57,10 +57,6 @@
     <Compile Include="IComper.cs" />
     <Compile Include="ICursorInfo.cs" />
     <Compile Include="IDisplay.cs" />
-    <Compile Include="IDisplayLevelData.cs" />
-    <Compile Include="IDisplayLevelName.cs" />
-    <Compile Include="IDisplayLevels.cs" />
-    <Compile Include="IDisplayMenu.cs" />
     <Compile Include="IFileReader.cs" />
     <Compile Include="ILevelBinder.cs" />
     <Compile Include="ILevelReader.cs" />

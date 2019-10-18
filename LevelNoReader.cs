@@ -5,7 +5,7 @@ namespace useSOLIDin
     class LevelNoReader : INoReader
     {
         private int lvlNumebr;
-        public Int32 No
+        public int No
         {
             get
             {

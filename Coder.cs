@@ -14,10 +14,7 @@ namespace useSOLIDin
             {
                 int randomPos = random.Next(temp.Length - 1);
                 char charInRandomPosithion = temp[randomPos];
-                //temp = gb.LevelData.ToCharArray();
-                // Console.WriteLine($"pos {randomPos} chOr {charInRandomPosithion}");
                 charInRandomPosithion = charInRandomPosithion == 'x' ? 'o' : 'x';
-                //.WriteLine(charInRandomPosithion);
                 temp[randomPos] = charInRandomPosithion;
                 counter++;
 

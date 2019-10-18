@@ -5,6 +5,7 @@ namespace useSOLIDin
 {
     class Levels
     {
+        const string pathToFile = @"C:\Users\burju\source\repos\useSOLIDin\Levels.txt";
         public ILevelReader LevelReader { get; set; }
         public ILevelBinder LevelBinder { get; set; }
         public ILevelValidator LevelValidator { get; set; }
@@ -28,16 +29,17 @@ namespace useSOLIDin
             if (LevelValidator.IsValid(level))
             {
                 LevelsInfo.Add(level);
-                LevelSaver.Save(level, @"C:\Users\burju\source\repos\useSOLIDin\Levels.txt");
-                Console.WriteLine("Level created and saved..");
+                LevelSaver.Save(level, pathToFile);
+                //LevelSaver.Save(level, @"C:\Users\burju\source\repos\useSOLIDin\Levels.txt");
+                Console.WriteLine("Level created and saved.."); // remove CW from BL
                 Thread.Sleep(3000);
             }
             else
             {
-                Console.WriteLine("level info is wrong");
+                Console.WriteLine("level info is wrong");// remove CW from BL
             }
         }
-        public void LoadLevels() => FileReader.GetAllData(@"C:\Users\burju\source\repos\useSOLIDin\Levels.txt", LevelsInfo);
+        public void LoadLevels() => FileReader.GetAllData(@"C:\Users\burju\source\repos\useSOLIDin\Levels.txt", LevelsInfo); // use const pathToFile
 
     }
 }
