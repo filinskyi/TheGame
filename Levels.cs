@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading;
 namespace useSOLIDin
 {
     class Levels
     {
-        const string pathToFile = @"C:\Users\burju\source\repos\useSOLIDin\Levels.txt";
+        
+        const string pathToFile = @"..\..\Levels.txt";
         public ILevelReader LevelReader { get; set; }
         public ILevelBinder LevelBinder { get; set; }
         public ILevelValidator LevelValidator { get; set; }
@@ -30,7 +32,7 @@ namespace useSOLIDin
             {
                 LevelsInfo.Add(level);
                 LevelSaver.Save(level, pathToFile);
-                //LevelSaver.Save(level, @"C:\Users\burju\source\repos\useSOLIDin\Levels.txt");
+                
                 Console.WriteLine("Level created and saved.."); // remove CW from BL
                 Thread.Sleep(3000);
             }
@@ -39,7 +41,7 @@ namespace useSOLIDin
                 Console.WriteLine("level info is wrong");// remove CW from BL
             }
         }
-        public void LoadLevels() => FileReader.GetAllData(@"C:\Users\burju\source\repos\useSOLIDin\Levels.txt", LevelsInfo); // use const pathToFile
+        public void LoadLevels() => FileReader.GetAllData(pathToFile, LevelsInfo); 
 
     }
 }
